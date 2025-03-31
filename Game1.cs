@@ -93,7 +93,6 @@ namespace Monogame_Drawing_from_a_SpriteSheet
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             characterSpritesheet = Content.Load<Texture2D>("skeleton_spritesheet");
             rectangleTexture = Content.Load<Texture2D>("rectangle");
-
         }
 
         protected override void Update(GameTime gameTime)
@@ -145,7 +144,6 @@ namespace Monogame_Drawing_from_a_SpriteSheet
                     playerLocation -= playerDirection * speed;
                     UpdateRects();
                 }
-
             base.Update(gameTime);
         }
 
@@ -205,7 +203,6 @@ namespace Monogame_Drawing_from_a_SpriteSheet
             }
             else
                 frame = 0;  // If the player is not moving, set frame to the idle frame which is zero on our spritesheet
-
         }
     }
 }
